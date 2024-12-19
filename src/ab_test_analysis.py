@@ -99,8 +99,8 @@ class ABTestAnalyzer:
     def plot_distribution(self):
         """Plot distribution of conversions."""
         plt.figure(figsize=(10, 6))
-        sns.kdeplot(data=self.control_data, label='Control', shade=True)
-        sns.kdeplot(data=self.treatment_data, label='Treatment', shade=True)
+        sns.kdeplot(data=self.control_data, label='Control', fill=True)
+        sns.kdeplot(data=self.treatment_data, label='Treatment', fill=True)
         plt.title('Distribution of Conversions')
         plt.xlabel('Conversion')
         plt.ylabel('Density')
